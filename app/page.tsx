@@ -213,9 +213,9 @@ export default function Page() {
           <Card className="p-8 lg:p-10">
             <SectionLabel>Apply</SectionLabel>
             <h3 className="mt-4 text-2xl font-bold text-white">Start with a fit check.</h3>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300">
-              Use this form to capture serious candidates before a full application. The included API route writes submissions to the server log so a developer can replace it with email, an ATS, or a CRM in minutes.
-            </p>
+           <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300">
+  Tell us a little about yourself to see if this is the right fit. If there’s strong alignment, we’ll reach out with next steps.
+</p>
 
  
               <form className="mt-8 grid gap-5" action="https://formspree.io/f/mlgoaqow" method="POST">

@@ -217,7 +217,7 @@ export default function Page() {
               Use this form to capture serious candidates before a full application. The included API route writes submissions to the server log so a developer can replace it with email, an ATS, or a CRM in minutes.
             </p>
 
-            <form className="mt-8 grid gap-5" action="https://formspree.io/f/YOURID" method="POST">
+            <https://formspree.io/f/mlgoaqow>
               <div className="grid gap-5 sm:grid-cols-2">
                 <label className="grid gap-2 text-sm font-medium text-stone-200">
                   Full Name

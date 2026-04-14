@@ -218,7 +218,7 @@ export default function Page() {
 </p>
 
  
-              <form className="mt-8 grid gap-5" action="https://formspree.io/f/xvzdoadk">
+              <form className="mt-8 grid gap-5" action="https://formspree.io/f/mlgoaqow">
               <div className="grid gap-5 sm:grid-cols-2">
                 <label className="grid gap-2 text-sm font-medium text-stone-200">
                   Full Name

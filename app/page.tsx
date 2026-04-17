@@ -31,7 +31,7 @@ const notForYou = [
   "You want a slow-paced, low-accountability environment.",
   "You prefer to stay disconnected from the community you serve.",
   "You resist systems, delegation, or expanded-function assistants.",
-  "You are looking for convenience more than purpose.",
+  "You are primarily motivated by convenience over growth",
 ];
 
 const fitCheckQuestions = [
@@ -39,6 +39,7 @@ const fitCheckQuestions = [
   "Do you want to build roots in a rural Missouri community?",
   "Would your personality and lifestyle connect naturally with our patients?",
   "Are you looking for a place to grow long-term, not just another associate seat?",
+  "Are you excited by the idea of producing at a high level, not just maintaining a schedule?",
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -117,7 +118,7 @@ export default function Page() {
               <SectionLabel>Projected Compensation</SectionLabel>
               <div className="mt-4 text-4xl font-bold text-amber-400 sm:text-5xl">$350K–$750K+</div>
               <p className="mt-3 text-sm leading-6 text-stone-300">
-                High-producing associate role with a proven clinical model, strong patient flow, and room for long-term growth.
+                You will be busy. You will be supported. You will be compensated accordingly.
               </p>
             </Card>
 
@@ -154,7 +155,7 @@ export default function Page() {
 
           <Card className="p-8 lg:p-10">
             <SectionLabel>Who thrives here</SectionLabel>
-            <h3 className="mt-4 text-2xl font-bold text-white">This role is about long-term fit.</h3>
+            <h3 className="mt-4 text-2xl font-bold text-white">This role is built for the right long-term fit—not short-term convenience.</h3>
             <div className="mt-6 space-y-4">
               {fitSignals.map((item) => (
                 <div key={item} className="flex gap-3">
@@ -173,7 +174,7 @@ export default function Page() {
             <SectionLabel>Culture</SectionLabel>
             <h3 className="mt-4 text-2xl font-bold text-white">A rural, outdoors-driven way of life.</h3>
             <p className="mt-5 text-base leading-7 text-stone-300">
-              Our patients and team value trust, hard work, family, and real conversation. Hunting, wildlife, land, deer season, and being outside are part of the culture here. Those things are not requirements, but they often signal a natural fit.
+              Our patients and team value trust, hard work, family, and real conversation. Hunting, wildlife, land, deer season, and being outside are part of the culture here. Not required—but people who connect with this lifestyle tend to thrive here faster.
             </p>
             <p className="mt-4 text-base leading-7 text-stone-300">
               The strongest candidates do not just want a better compensation package. They want a better kind of life and a better kind of practice.
@@ -312,10 +313,10 @@ export default function Page() {
         <div className="rounded-[2rem] border border-stone-800 bg-gradient-to-r from-stone-950 to-stone-900 px-8 py-10 shadow-2xl">
           <SectionLabel>Final word</SectionLabel>
           <h3 className="mt-4 text-3xl font-bold tracking-tight text-white">
-            We are not trying to attract everyone.
+            We are intentionally not for everyone.
           </h3>
           <p className="mt-4 max-w-3xl text-base leading-7 text-stone-300">
-            We are trying to attract the right person: someone with strong character, honest communication, a competitive desire to improve, and a real respect for community, relationships, and meaningful work.
+            But for the right person, this can be a career-defining opportunity.
           </p>
         </div>
       </section>

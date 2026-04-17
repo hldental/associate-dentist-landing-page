@@ -274,6 +274,28 @@ export default function Page() {
                 </label>
               </div>
 
+              <label className="grid gap-2 text-sm font-medium text-stone-200">
+                Why does this opportunity stand out to you?
+                <textarea
+                  name="why_fit"
+                  required
+                  rows={5}
+                  className="rounded-2xl border border-stone-700 bg-stone-900 px-4 py-3 text-stone-100 outline-none transition focus:border-amber-500"
+                  placeholder="Tell us what about the values, pace, lifestyle, or opportunity connects with you."
+                />
+              </label>
+
+              <label className="grid gap-2 text-sm font-medium text-stone-200">
+                What do you enjoy outside of dentistry?
+                <textarea
+                  name="outside_interests"
+                  required
+                  rows={5}
+                  className="rounded-2xl border border-stone-700 bg-stone-900 px-4 py-3 text-stone-100 outline-none transition focus:border-amber-500"
+                  placeholder="Family, faith, outdoors, hunting, wildlife, athletics, community, travel, etc."
+                />
+              </label>
+
               <div className="pt-2">
                 <button
                   type="submit"

@@ -178,6 +178,7 @@ export default function Page() {
             action="https://formspree.io/f/mlgoaqow"
             method="POST"
           >
+            <input type="hidden" name="_redirect" value="https://associate-dentist-landing-page.vercel.app/thank-you" />
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="grid gap-2 text-sm font-medium text-stone-200">
                 Full Name

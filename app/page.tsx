@@ -173,11 +173,27 @@ export default function Page() {
             us understand whether there is real alignment before we reach out.
           </p>
 
-          <form
-            className="mt-8 grid gap-5"
-            action="https://formspree.io/f/mlgoaqow"
-            method="POST"
-          >
+         <form
+  className="mt-8 grid gap-5"
+  action="https://formspree.io/f/mlgoaqow"
+  method="POST"
+  onSubmit={async (e) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+
+    const data = new FormData(form);
+
+    await fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    window.location.href = "/thank-you";
+  }}
+>
             <input type="hidden" name="_next" value="https://associate-dentist-landing-page.vercel.app/thank-you" />
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="grid gap-2 text-sm font-medium text-stone-200">

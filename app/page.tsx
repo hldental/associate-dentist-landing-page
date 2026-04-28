@@ -173,12 +173,7 @@ export default function Page() {
             us understand whether there is real alignment before we reach out.
           </p>
 
-          <form
-            className="mt-8 grid gap-5"
-            action="https://formspree.io/f/mlgoaqow"
-            method="POST"
-          >
-            <input type="hidden" name="_next" value="https://associate-dentist-landing-page.vercel.app/thank-you" />
+          <form className="mt-8 grid gap-5" action="/api/apply" method="POST">
             <div className="grid gap-5 sm:grid-cols-2">
               <label className="grid gap-2 text-sm font-medium text-stone-200">
                 Full Name
@@ -271,12 +266,8 @@ export default function Page() {
                 <option value="production">
                   High production environment
                 </option>
-                <option value="rural">
-                  Rural / community lifestyle
-                </option>
-                <option value="growth">
-                  Long-term growth opportunity
-                </option>
+                <option value="rural">Rural / community lifestyle</option>
+                <option value="growth">Long-term growth opportunity</option>
               </select>
             </label>
 

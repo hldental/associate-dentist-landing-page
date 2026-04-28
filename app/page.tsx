@@ -175,9 +175,9 @@ export default function Page() {
 
          <form
   className="mt-8 grid gap-5"
-  action="https://formspree.io/f/mlgoaqow"
+  action="/api/apply"
   method="POST"
-  onSubmit={async (e) => {
+>
     e.preventDefault();
     const form = e.currentTarget;
 

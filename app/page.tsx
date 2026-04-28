@@ -1,28 +1,30 @@
 export const metadata = {
   title: "Associate Dentist Opportunity | Westphalia, Missouri",
   description:
-    "High-production associate dentist opportunity with strong patient flow, autonomy, and long-term upside in Westphalia, Missouri.",
+    "High-production, non-corporate associate dentist opportunity with strong patient flow, autonomy, and $350K–$750K+ earning potential.",
 };
 
 const differentiators = [
-  "Strong, consistent patient flow",
-  "Assistant-driven model for efficiency",
-  "CBCT, digital scanners, in-house lab, and 3D printing",
-  "Real clinical autonomy in a non-corporate environment",
+  "Strong existing patient demand",
+  "Assistant-driven workflow",
+  "Modern technology and efficient systems",
+  "Real autonomy without corporate oversight",
 ];
 
 const fitSignals = [
-  "You want to produce at a high level, not just maintain a schedule.",
+  "You want to produce at a high level.",
+  "You want autonomy without corporate oversight.",
+  "You are comfortable in a fast-paced environment.",
   "You are open to living within 30 minutes of the practice.",
-  "You value accountability, strong systems, and honest feedback.",
-  "You want a long-term opportunity, not just another associate seat.",
+  "You want a long-term opportunity, not just another associate job.",
 ];
 
 const notForYou = [
-  "You want a slow-paced, low-accountability environment.",
-  "You prefer convenience over growth.",
-  "You resist systems, delegation, or an assistant-driven model.",
-  "You are looking for a typical corporate-style associate role.",
+  "You want a slow-paced schedule.",
+  "You prefer low accountability.",
+  "You are not open to rural/community life.",
+  "You resist systems, delegation, or feedback.",
+  "You are only casually browsing.",
 ];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -71,15 +73,13 @@ export default function Page() {
               $350K–$750K+ Associate Dentist Opportunity
             </h1>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-200">
-              High-production, assistant-driven private practice with strong
-              patient flow, real autonomy, and long-term upside.
+            <p className="mt-6 max-w-2xl text-xl font-semibold leading-8 text-stone-100">
+              High production. Non-corporate. Built for the right doctor.
             </p>
 
             <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300">
-              This is not a typical corporate associate role. It is built for
-              the right doctor who wants to produce at a high level, grow
-              long-term, and build something meaningful in a rural community.
+              Walk into strong patient demand, assistant-driven systems, modern
+              technology, and real clinical autonomy in Westphalia, Missouri.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -87,12 +87,12 @@ export default function Page() {
                 href="#apply"
                 className="rounded-2xl bg-amber-500 px-6 py-4 text-base font-semibold text-stone-950 shadow-lg transition hover:-translate-y-0.5 hover:bg-amber-400"
               >
-                Start Fit Check
+                Start 60-Second Fit Check
               </a>
             </div>
 
             <p className="mt-4 text-sm text-stone-400">
-              Takes about 3 minutes. We review each submission personally.
+              We personally review every submission.
             </p>
           </div>
 
@@ -103,8 +103,8 @@ export default function Page() {
                 $350K–$750K+
               </div>
               <p className="mt-3 text-sm leading-6 text-stone-300">
-                Built on real production systems, strong patient flow, and an
-                environment designed for efficiency.
+                $225K base + 30–35% production in a high-patient-flow,
+                production-driven environment.
               </p>
             </Card>
           </div>
@@ -116,13 +116,12 @@ export default function Page() {
           <div>
             <SectionLabel>Why This Role Is Different</SectionLabel>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Built for production—not limitation.
+              Built for production — not limitation.
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-7 text-stone-300">
-              Most associate roles cap your income by limiting your production.
-              This practice is designed to do the opposite: strong systems,
-              current technology, and an efficient clinical model that helps the
-              right doctor thrive.
+              Most associate roles cap your upside with limited patient flow,
+              weak support, or corporate restrictions. This role is designed to
+              do the opposite.
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -135,7 +134,7 @@ export default function Page() {
           </div>
 
           <Card className="p-8 lg:p-10">
-            <SectionLabel>Who Thrives Here</SectionLabel>
+            <SectionLabel>Who This Is For</SectionLabel>
             <div className="mt-4 space-y-4">
               {fitSignals.map((item) => (
                 <div key={item} className="flex gap-3">
@@ -166,11 +165,11 @@ export default function Page() {
         <Card className="p-8 lg:p-10">
           <SectionLabel>Apply</SectionLabel>
           <h3 className="mt-4 text-2xl font-bold text-white">
-            Start with a fit check
+            Start with a 60-second fit check
           </h3>
           <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300">
-            We are not looking for just any dentist. This short fit check helps
-            us understand whether there is real alignment before we reach out.
+            We are not looking for just any dentist. This short form helps us
+            understand whether there is real alignment before we reach out.
           </p>
 
           <form className="mt-8 grid gap-5" action="/api/apply" method="POST">
@@ -318,7 +317,7 @@ export default function Page() {
             </div>
 
             <p className="text-center text-xs text-stone-400">
-              We review each submission personally.
+              Qualified candidates are contacted directly.
             </p>
           </form>
         </Card>

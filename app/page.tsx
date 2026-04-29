@@ -141,7 +141,7 @@ export default function Page() {
             <SectionLabel>Who This Is For</SectionLabel>
             <div className="mt-4 space-y-4">
               {fitSignals.map((item) => (
-                <div key={item} className="flex gap-3" key={item}>
+              <div key={item} className="flex gap-3">
                   <div className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-amber-400" />
                   <p className="text-sm leading-6 text-stone-300">{item}</p>
                 </div>

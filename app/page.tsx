@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Associate Dentist Opportunity | Westphalia, Missouri",
   description:
-    "High-production, non-corporate associate dentist opportunity with strong patient flow, autonomy, and $350K–$750K+ earning potential.",
+    "A rural, non-corporate associate dentist opportunity focused on community, culture, clinical growth, and long-term fit in Westphalia, Missouri.",
 };
 
 const differentiators = [
@@ -24,6 +24,7 @@ const notForYou = [
   "You are not open to becoming part of a smaller community.",
   "You are looking for a short-term or temporary role.",
   "You prefer minimal patient interaction or long-term relationships.",
+];
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -68,19 +69,20 @@ export default function Page() {
             </div>
 
             <h1 className="mt-8 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-  Build a Meaningful Career in a Community That Truly Needs You
-</h1>
+              Build a Meaningful Career in a Community That Truly Needs You
+            </h1>
 
-<p className="mt-6 max-w-2xl text-xl font-semibold leading-8 text-stone-100">
-  A high-demand, non-corporate rural practice where you can grow clinically,
-  build relationships, and make a lasting impact.
-</p>>
+            <p className="mt-6 max-w-2xl text-xl font-semibold leading-8 text-stone-100">
+              A high-demand, non-corporate rural practice where you can grow
+              clinically, build relationships, and make a lasting impact.
+            </p>
 
             <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300">
-  In Westphalia, Missouri, patients value their dentist and rely on long-term
-  relationships. You’ll step into a practice with real demand, strong support,
-  and the opportunity to become a trusted part of the community.
-</p>
+              In Westphalia, Missouri, patients value their dentist and rely on
+              long-term relationships. You’ll step into a practice with real
+              demand, strong support, and the opportunity to become a trusted
+              part of the community.
+            </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
@@ -98,13 +100,14 @@ export default function Page() {
 
           <div className="grid gap-5 self-start">
             <Card className="p-8">
-              <SectionLabel>Projected Compensation</SectionLabel>
+              <SectionLabel>Opportunity</SectionLabel>
               <div className="mt-4 text-4xl font-bold text-amber-400 sm:text-5xl">
-                $350K–$750K+
+                Rural Practice. Real Impact.
               </div>
               <p className="mt-3 text-sm leading-6 text-stone-300">
-                $225K base + 30–35% production in a high-patient-flow,
-                production-driven environment.
+                Competitive compensation, strong patient demand, and a
+                long-term opportunity to serve a community that values its
+                dentist.
               </p>
             </Card>
           </div>
@@ -116,13 +119,14 @@ export default function Page() {
           <div>
             <SectionLabel>Why This Role Is Different</SectionLabel>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-  Why Dentists Choose This Practice
-</h2>
-          <p className="mt-5 max-w-2xl text-base leading-7 text-stone-300">
-  This is a practice where relationships matter — with patients, team members,
-  and the community. You’ll have the support, autonomy, and demand to grow at
-  your own pace while building a long-term career.
-</p>
+              Why Dentists Choose This Practice
+            </h2>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-stone-300">
+              This is a practice where relationships matter — with patients,
+              team members, and the community. You’ll have the support,
+              autonomy, and demand to grow at your own pace while building a
+              long-term career.
+            </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {differentiators.map((item) => (
@@ -137,7 +141,7 @@ export default function Page() {
             <SectionLabel>Who This Is For</SectionLabel>
             <div className="mt-4 space-y-4">
               {fitSignals.map((item) => (
-                <div key={item} className="flex gap-3">
+                <div key={item} className="flex gap-3" key={item}>
                   <div className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-amber-400" />
                   <p className="text-sm leading-6 text-stone-300">{item}</p>
                 </div>
@@ -168,9 +172,9 @@ export default function Page() {
             Start with a 60-second fit check
           </h3>
           <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300">
-            We’re looking for the right long-term fit — someone who values community,
-relationships, and clinical growth. This short form helps us understand
-alignment before reaching out.
+            We’re looking for the right long-term fit — someone who values
+            community, relationships, and clinical growth. This short form helps
+            us understand alignment before reaching out.
           </p>
 
           <form className="mt-8 grid gap-5" action="/api/apply" method="POST">
@@ -257,17 +261,15 @@ alignment before reaching out.
                 <option value="" disabled>
                   Select one
                 </option>
-                <option value="income">
-                  High income potential ($350K–$750K+)
+                <option value="community">
+                  Rural community impact / patient relationships
                 </option>
                 <option value="autonomy">
-                  Clinical autonomy (non-corporate)
+                  Clinical autonomy in a non-corporate setting
                 </option>
-                <option value="production">
-                  High production environment
-                </option>
-                <option value="rural">Rural / community lifestyle</option>
+                <option value="team">Supportive team culture</option>
                 <option value="growth">Long-term growth opportunity</option>
+                <option value="income">Competitive earning potential</option>
               </select>
             </label>
 
@@ -282,11 +284,16 @@ alignment before reaching out.
                 <option value="" disabled>
                   Select one
                 </option>
-                <option value="high-production">
-                  High production / fast-paced
+                <option value="community-focused">
+                  Community-focused private practice
                 </option>
-                <option value="balanced">Balanced pace</option>
-                <option value="slower">Slower pace / lower volume</option>
+                <option value="high-production">
+                  High-demand / growth-oriented environment
+                </option>
+                <option value="balanced">
+                  Balanced pace with strong patient relationships
+                </option>
+                <option value="corporate">Corporate-style practice</option>
               </select>
             </label>
 

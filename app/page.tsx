@@ -5,27 +5,25 @@ export const metadata = {
 };
 
 const differentiators = [
-  "Strong existing patient demand",
-  "Assistant-driven workflow",
-  "Modern technology and efficient systems",
-  "Real autonomy without corporate oversight",
+  "Deep connection to a loyal, underserved rural community",
+  "Strong patient demand without corporate pressure",
+  "Supportive, team-first culture that values relationships",
+  "Clinical autonomy with mentorship and collaboration",
 ];
 
 const fitSignals = [
-  "You want to produce at a high level.",
-  "You want autonomy without corporate oversight.",
-  "You are comfortable in a fast-paced environment.",
-  "You are open to living within 30 minutes of the practice.",
-  "You want a long-term opportunity, not just another associate job.",
+  "You value building long-term relationships with patients.",
+  "You want to be part of a close-knit team and community.",
+  "You are open to a rural lifestyle with meaningful impact.",
+  "You want autonomy without corporate pressure.",
+  "You are looking for a long-term home, not just a temporary role.",
 ];
 
 const notForYou = [
-  "You want a slow-paced schedule.",
-  "You prefer low accountability.",
-  "You are not open to rural/community life.",
-  "You resist systems, delegation, or feedback.",
-  "You are only casually browsing.",
-];
+  "You prefer a highly urban or corporate practice setting.",
+  "You are not open to becoming part of a smaller community.",
+  "You are looking for a short-term or temporary role.",
+  "You prefer minimal patient interaction or long-term relationships.",
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
@@ -70,17 +68,19 @@ export default function Page() {
             </div>
 
             <h1 className="mt-8 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              $350K–$750K+ Associate Dentist Opportunity
-            </h1>
+  Build a Meaningful Career in a Community That Truly Needs You
+</h1>
 
-            <p className="mt-6 max-w-2xl text-xl font-semibold leading-8 text-stone-100">
-              High production. Non-corporate. Built for the right doctor.
-            </p>
+<p className="mt-6 max-w-2xl text-xl font-semibold leading-8 text-stone-100">
+  A high-demand, non-corporate rural practice where you can grow clinically,
+  build relationships, and make a lasting impact.
+</p>>
 
             <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300">
-              Walk into strong patient demand, assistant-driven systems, modern
-              technology, and real clinical autonomy in Westphalia, Missouri.
-            </p>
+  In Westphalia, Missouri, patients value their dentist and rely on long-term
+  relationships. You’ll step into a practice with real demand, strong support,
+  and the opportunity to become a trusted part of the community.
+</p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
@@ -116,13 +116,13 @@ export default function Page() {
           <div>
             <SectionLabel>Why This Role Is Different</SectionLabel>
             <h2 className="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Built for production — not limitation.
-            </h2>
-            <p className="mt-5 max-w-2xl text-base leading-7 text-stone-300">
-              Most associate roles cap your upside with limited patient flow,
-              weak support, or corporate restrictions. This role is designed to
-              do the opposite.
-            </p>
+  Why Dentists Choose This Practice
+</h2>
+          <p className="mt-5 max-w-2xl text-base leading-7 text-stone-300">
+  This is a practice where relationships matter — with patients, team members,
+  and the community. You’ll have the support, autonomy, and demand to grow at
+  your own pace while building a long-term career.
+</p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {differentiators.map((item) => (
@@ -168,8 +168,9 @@ export default function Page() {
             Start with a 60-second fit check
           </h3>
           <p className="mt-4 max-w-2xl text-base leading-7 text-stone-300">
-            We are not looking for just any dentist. This short form helps us
-            understand whether there is real alignment before we reach out.
+            We’re looking for the right long-term fit — someone who values community,
+relationships, and clinical growth. This short form helps us understand
+alignment before reaching out.
           </p>
 
           <form className="mt-8 grid gap-5" action="/api/apply" method="POST">
